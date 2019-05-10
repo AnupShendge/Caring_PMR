@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNgMavenExampleSuite">
+  <test name="TestNgMavenTest">
+    <classes>
+      <class name="com.PMR.testcases.AddPatientTest"/>
+      <class name="com.PMR.testcases.HealthRecordsTest"/>
+    </classes>
+  </test>
+</suite>
