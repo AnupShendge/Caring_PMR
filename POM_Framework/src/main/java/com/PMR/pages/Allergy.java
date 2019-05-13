@@ -28,7 +28,7 @@ public class Allergy extends TestBase {
 	@FindBy(xpath="(//*[@name='description'])[1]")
 	WebElement description;
 	
-	@FindBy(xpath="(//*[text()='SAVE'])[4]")
+	@FindBy(xpath="(//*[text()='SAVE'])[3]")
 	WebElement save;
 	
 	public Allergy() {

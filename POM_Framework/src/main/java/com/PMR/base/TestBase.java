@@ -11,7 +11,7 @@ public static WebDriver driver;
 
 	public static  void initialise() throws IOException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Anup\\workspace\\Selenium\\POM_Framework\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Anup\\git\\Caring_PMR\\POM_Framework\\driver\\chromedriver.exe");
 		
 		driver = new ChromeDriver();
 		

@@ -24,6 +24,10 @@ public class Login extends TestBase {
 	@FindBy(xpath="//*[contains(text(),'Welcome, Anup')]")
 	WebElement element;
 	
+	
+	
+	
+	
 	public Login() {
 		PageFactory.initElements(driver, this);
 	}
@@ -37,11 +41,11 @@ public class Login extends TestBase {
 	
 	
 	
-	public AddPatient ClickLogin(String un, String pwd) throws InterruptedException {
+	public Welcome ClickLogin(String un, String pwd) throws InterruptedException {
 		login.click();
 		Thread.sleep(3000);
 		
-		ExcelDataConfig excel = new ExcelDataConfig("C:\\Users\\Anup\\workspace\\Selenium\\POM_Framework\\data\\PMR Login (1).xlsx");
+		ExcelDataConfig excel = new ExcelDataConfig("C:\\Users\\Anup\\git\\Caring_PMR\\POM_Framework\\data\\PMR Login (1).xlsx");
 		un = excel.getData(0, 1, 0);
 	 	pwd=excel.getData(0, 1, 1);
 	 	
@@ -49,20 +53,13 @@ public class Login extends TestBase {
 	 	password.sendKeys(pwd);
 	 	
 		submit.click();
-		return new AddPatient();
+		return new Welcome();
 		
 	}
 
-
-
 	
 	
 	
-/*	public AddPrescriber ap() {
-		login.click();
-		return new AddPrescriber();
-		
-	}*/
 	
 	
 	

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15062" started-at="2019-05-09T12:18:59Z" finished-at="2019-05-09T12:19:14Z">
+  <suite name="Default suite" duration-ms="29911" started-at="2019-05-13T07:43:31Z" finished-at="2019-05-13T07:44:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15062" started-at="2019-05-09T12:18:59Z" finished-at="2019-05-09T12:19:14Z">
-      <class name="com.PMR.testcases.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.PMR.testcases.LoginTest@6a1aab78]" name="setup" is-config="true" duration-ms="9008" started-at="2019-05-09T12:18:59Z" finished-at="2019-05-09T12:19:08Z">
+    <test name="Default test" duration-ms="29911" started-at="2019-05-13T07:43:31Z" finished-at="2019-05-13T07:44:01Z">
+      <class name="com.PMR.testcases.NotesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.PMR.testcases.NotesTest@6a1aab78]" name="setup" is-config="true" duration-ms="22458" started-at="2019-05-13T07:43:32Z" finished-at="2019-05-13T07:43:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:1, instance:com.PMR.testcases.LoginTest@6a1aab78]" name="login" duration-ms="6023" started-at="2019-05-09T12:19:08Z" finished-at="2019-05-09T12:19:14Z">
+        <test-method status="PASS" signature="add()[pri:0, instance:com.PMR.testcases.NotesTest@6a1aab78]" name="add" duration-ms="7430" started-at="2019-05-13T07:43:54Z" description="Add Notes" finished-at="2019-05-13T07:44:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- com.PMR.testcases.LoginTest -->
+        </test-method> <!-- add -->
+      </class> <!-- com.PMR.testcases.NotesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

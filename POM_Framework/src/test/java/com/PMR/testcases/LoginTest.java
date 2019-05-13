@@ -8,12 +8,13 @@ import org.testng.annotations.Test;
 import com.PMR.base.TestBase;
 import com.PMR.pages.AddPatient;
 import com.PMR.pages.Login;
+import com.PMR.pages.Welcome;
 
 import junit.framework.Assert;
 
 public class LoginTest extends TestBase {
 		Login lg;
-		AddPatient ap;
+		Welcome wc;
 		
 		
 		
@@ -25,7 +26,7 @@ public class LoginTest extends TestBase {
 		
 		@Test(priority=1)
 		public void login() throws InterruptedException {
-			 ap = lg.ClickLogin(null, null);
+			 wc = lg.ClickLogin(null, null);
 		}
 	
 		

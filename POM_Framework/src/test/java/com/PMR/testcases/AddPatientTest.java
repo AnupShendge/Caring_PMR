@@ -10,11 +10,13 @@ import com.PMR.base.TestBase;
 import com.PMR.pages.AddPatient;
 import com.PMR.pages.HealthRecords;
 import com.PMR.pages.Login;
+import com.PMR.pages.Welcome;
 
 public class AddPatientTest extends TestBase {
 	Login lg;
 	AddPatient ap;
 	HealthRecords hr;
+	Welcome wc;
 	
 	
 	
@@ -23,7 +25,8 @@ public class AddPatientTest extends TestBase {
 	public void setup() throws IOException, InterruptedException {
 		initialise();
 		lg = new Login();
-		ap = lg.ClickLogin(null, null);
+		 wc = lg.ClickLogin(null, null);
+		 ap = wc.ClickOnPatients();
 	}
 	
 	

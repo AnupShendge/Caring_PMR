@@ -20,7 +20,7 @@ public class Notes extends TestBase {
 	@FindBy(xpath="(//*[@id='comment'])[2]")
 	WebElement comment;
 	
-	@FindBy(xpath="(//*[text()='SAVE'])[6]")
+	@FindBy(xpath="(//*[text()='SAVE'])[5]")
 	WebElement save;
 	
 	public Notes() {

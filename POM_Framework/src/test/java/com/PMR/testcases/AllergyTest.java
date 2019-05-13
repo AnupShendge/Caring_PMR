@@ -9,8 +9,12 @@ import com.PMR.base.TestBase;
 import com.PMR.pages.AddPatient;
 import com.PMR.pages.Allergy;
 import com.PMR.pages.HealthRecords;
+import com.PMR.pages.Login;
+import com.PMR.pages.Welcome;
 
 public class AllergyTest extends TestBase {
+	Login lg;
+	Welcome wc;
 	AddPatient ap;
 	HealthRecords hr;
 	Allergy al;
@@ -19,13 +23,14 @@ public class AllergyTest extends TestBase {
 	@BeforeMethod
 	public void setup() throws IOException, InterruptedException {
 		initialise();
-		ap = new AddPatient();
-		hr = ap.addpatient();
+		lg = new Login();
+		 wc = lg.ClickLogin(null, null);
+		 ap = wc.ClickOnPatients();
+		 al = ap.addPatient1();
 		}
 	
 	@Test(description="Add allergy for patient")
 	public void addAllergy() throws InterruptedException {
-		al = new Allergy();
 		al.addAllergy();
 		
 	}

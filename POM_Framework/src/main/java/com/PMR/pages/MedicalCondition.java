@@ -23,7 +23,7 @@ public class MedicalCondition extends TestBase {
 	@FindBy(xpath="//*[@id='commentsVal']")
 	WebElement comments;
 	
-	@FindBy(xpath="(//*[text()='SAVE'])[5]")
+	@FindBy(xpath="(//*[text()='SAVE'])[4]")
 	WebElement save;
 	
 	
@@ -39,11 +39,11 @@ public class MedicalCondition extends TestBase {
 		medicalcondition.click();
 		addnew.click();
 		condition.sendKeys("Good");
-		Thread.sleep(200);
+		Thread.sleep(2000);
 		remarks.sendKeys("No");
-		Thread.sleep(200);
+		Thread.sleep(2000);
 		comments.sendKeys("No comments");
-		Thread.sleep(200);
+		Thread.sleep(2000);
 		save.click();
 	}
 
