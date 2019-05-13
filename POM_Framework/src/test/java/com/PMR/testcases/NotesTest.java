@@ -18,21 +18,19 @@ public class NotesTest extends TestBase {
 	AddPatient ap;
 	HealthRecords hr;
 	Notes nt;
-	
+
 	@BeforeMethod
 	public void setup() throws IOException, InterruptedException {
 		initialise();
 		lg = new Login();
-		 wc = lg.ClickLogin(null, null);
-		 ap = wc.ClickOnPatients();
-		 nt = ap.addPatient3();
-		}
-	
-	@Test(description="Add Notes")
+		wc = lg.ClickLogin(null, null);
+		ap = wc.ClickOnPatients();
+		nt = ap.addPatient3();
+	}
+
+	@Test(description = "Add Notes")
 	public void add() throws InterruptedException {
 		nt.addNotes();
 	}
-	
-	
 
 }

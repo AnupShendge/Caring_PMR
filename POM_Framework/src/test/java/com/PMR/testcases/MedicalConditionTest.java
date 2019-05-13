@@ -13,23 +13,23 @@ import com.PMR.pages.MedicalCondition;
 import com.PMR.pages.Welcome;
 
 public class MedicalConditionTest extends TestBase {
-	
+
 	Login lg;
 	Welcome wc;
 	AddPatient ap;
 	HealthRecords hr;
 	MedicalCondition mc;
-	
+
 	@BeforeMethod
 	public void setup() throws IOException, InterruptedException {
 		initialise();
 		lg = new Login();
-		 wc = lg.ClickLogin(null, null);
-		 ap = wc.ClickOnPatients();
+		wc = lg.ClickLogin(null, null);
+		ap = wc.ClickOnPatients();
 		mc = ap.addPatient2();
-		}
-	
-	@Test(description="Add medical condition")
+	}
+
+	@Test(description = "Add medical condition")
 	public void add() throws InterruptedException {
 		mc.addMedicalCondition();
 	}

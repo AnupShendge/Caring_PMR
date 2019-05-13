@@ -12,49 +12,35 @@ import com.PMR.pages.HealthRecords;
 import com.PMR.pages.Login;
 import com.PMR.pages.Welcome;
 
-
-public class HealthRecordsTest extends TestBase{
+public class HealthRecordsTest extends TestBase {
 	Login lg;
 	AddPatient ap;
 	HealthRecords hr;
 	Welcome wc;
-	
-	
-	/*@BeforeMethod
-	public void setup() throws IOException, InterruptedException {
-		initialise();
-		ap = new AddPatient();
-		hr = ap.addpatient();
-		
-		}*/
-	
+
 	@BeforeTest
 	public void setup() throws IOException, InterruptedException {
 		initialise();
 		lg = new Login();
-		 wc = lg.ClickLogin(null, null);
-		 ap = wc.ClickOnPatients();
+		wc = lg.ClickLogin(null, null);
+		ap = wc.ClickOnPatients();
 		hr = ap.addpatient();
-		
-		}
 
+	}
 
-	
-	
-	@Test(priority=1)
-	public void addingHealthRecords() throws InterruptedException {
+	@Test(priority = 1)
+	public void AddingHealthRecords() throws InterruptedException {
 		hr.add();
-		}
-	
-	@Test(priority=2)
-	public void updateHealthRecords() throws InterruptedException {
+	}
+
+	@Test(priority = 2)
+	public void UpdateHealthRecords() throws InterruptedException {
 		hr.update();
 	}
-	
-	@Test(priority=3)
-	public void deleteHealthRecords() throws InterruptedException {
+
+	@Test(priority = 3)
+	public void DeleteHealthRecords() throws InterruptedException {
 		hr.delete();
 	}
-	
-	
+
 }

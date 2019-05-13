@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.PMR.base.TestBase;
@@ -17,35 +18,24 @@ public class AddPatientTest extends TestBase {
 	AddPatient ap;
 	HealthRecords hr;
 	Welcome wc;
-	
-	
-	
-	
-	@BeforeMethod
+
+	@BeforeTest
 	public void setup() throws IOException, InterruptedException {
 		initialise();
 		lg = new Login();
-		 wc = lg.ClickLogin(null, null);
-		 ap = wc.ClickOnPatients();
+		wc = lg.ClickLogin(null, null);
+		ap = wc.ClickOnPatients();
 	}
-	
-	
-	@Test(description="Add patient scenario")
+
+	@Test(description = "Add patient scenario")
 	public void login() throws InterruptedException {
-		 hr = ap.addpatient();
-		
-		
+		hr = ap.addpatient();
+
 	}
-	
-	@AfterMethod
+
+	/*@AfterMethod
 	public void close() {
-		//teardown();
-	}
-	
-	
-	
-	
-	
-	
+		// teardown();
+	}*/
 
 }

@@ -8,26 +8,26 @@ import com.PMR.base.TestBase;
 
 public class Notes extends TestBase {
 
-	@FindBy(xpath="//*[text()='Notes']")
+	@FindBy(xpath = "//*[text()='Notes']")
 	WebElement notes;
-	
-	@FindBy(xpath="(//*[text()='Add New'])[4]")
+
+	@FindBy(xpath = "(//*[text()='Add New'])[4]")
 	WebElement addnew;
-	
-	@FindBy(xpath="(//*[@id='usr'])[2]")
+
+	@FindBy(xpath = "(//*[@id='usr'])[2]")
 	WebElement title;
-	
-	@FindBy(xpath="(//*[@id='comment'])[2]")
+
+	@FindBy(xpath = "(//*[@id='comment'])[2]")
 	WebElement comment;
-	
-	@FindBy(xpath="(//*[text()='SAVE'])[5]")
+
+	@FindBy(xpath = "(//*[text()='SAVE'])[5]")
 	WebElement save;
-	
+
 	public Notes() {
-		
+
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void addNotes() throws InterruptedException {
 		notes.click();
 		addnew.click();
@@ -36,16 +36,7 @@ public class Notes extends TestBase {
 		comment.sendKeys("bad");
 		Thread.sleep(3000);
 		save.click();
-		
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

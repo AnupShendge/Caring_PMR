@@ -18,22 +18,20 @@ public class AllergyTest extends TestBase {
 	AddPatient ap;
 	HealthRecords hr;
 	Allergy al;
-	
-	
+
 	@BeforeMethod
 	public void setup() throws IOException, InterruptedException {
 		initialise();
 		lg = new Login();
-		 wc = lg.ClickLogin(null, null);
-		 ap = wc.ClickOnPatients();
-		 al = ap.addPatient1();
-		}
-	
-	@Test(description="Add allergy for patient")
-	public void addAllergy() throws InterruptedException {
-		al.addAllergy();
-		
+		wc = lg.ClickLogin(null, null);
+		ap = wc.ClickOnPatients();
+		al = ap.addPatient1();
 	}
-	
+
+	@Test(description = "Add allergy for patient")
+	public void AddAllergy() throws InterruptedException {
+		al.addAllergy();
+
+	}
 
 }

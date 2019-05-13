@@ -6,27 +6,27 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.PMR.base.TestBase;
-import com.PMR.pages.AddPrescribers;
 import com.PMR.pages.Login;
+import com.PMR.pages.Reminders;
 import com.PMR.pages.Welcome;
 
-public class AddPrescriberTest extends TestBase {
+public class RemindersTest extends TestBase {
+
 	Login lg;
 	Welcome wc;
-	AddPrescribers ap;
+	Reminders rm;
 
 	@BeforeTest
 	public void setup() throws IOException, InterruptedException {
 		initialise();
 		lg = new Login();
 		wc = lg.ClickLogin(null, null);
-		ap = wc.ClickOnPrescriber();
-
+		rm = wc.ClickOnReminders();
 	}
 
 	@Test
-	public void AddPrescriber() throws InterruptedException {
-		ap.ClickOnAddPrescriber();
+	public void SearchPatient() {
+		rm.SearchPatient();
 	}
 
 }
